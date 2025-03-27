@@ -272,11 +272,173 @@ header {
     align-items: center;
 }
 
-#show_more img {
+
+.para_22_600 {
     color: #313134;
-    width: 20px;
-    height: 15px;
-    flex: none;
-    padding: 0px;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 32px;
 }
 
+#rates {
+    background-color:#B94A39;
+    position: absolute;
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 67px;
+    padding: 80px 80px 230px 80px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    margin-top: 700px;
+}
+
+.para_18 {
+    color:#FFFFFF;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 32px;
+    padding-top: 24px;
+    width: 624px;
+}
+
+.headline_40_white {
+    color:#FFFFFF;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: normal;
+}
+
+.price {
+    color:#FFFFFF;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: normal;
+    align-items: normal;
+}
+
+#service_price {
+    border-bottom-style:dotted;
+    border-color: #FFFFFF;
+    border-bottom-width: 4px;
+    padding-bottom: 24px;
+    flex-direction: row;
+    display: flex;
+    justify-content:space-between;
+    align-items: normal;
+}
+
+.rates {
+    padding: 0;
+    width: 1280px;
+}
+
+#get_in_touch {
+    background-color:#313134;
+    position: absolute;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding-top: 80px;
+    padding-bottom: 120px;;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    margin-top: 1800px;
+}
+
+.headline_56 {
+    color:#FFFFFF;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 56px;
+    font-style: normal;
+}
+
+.para_22_white {
+    color:#FFFFFF;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 32px;
+    width: 406px;
+}
+
+#input_form {
+    width: 406px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#name_email {
+    width: 406px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    height: 49px;
+}
+
+
+.my_class::placeholder {
+    color: #ffffff;
+	opacity: 0.24;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 27px;
+    display: flex;
+    width: 85px;
+}
+
+.my_class:placeholder-shown {
+    padding: 10px 12px 12px 12px;
+    background: rgba(255,255,255,0.08);
+    width: 191px;
+    display: flex;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#your_text {
+    display:;
+    padding: 10px 0px 0px 12px;
+    background: rgba(255,255,255,0.08);
+    border: 0px;
+    border-radius: 5px;
+    height: 97px;
+    color: #ffffff;
+    font-family: "Figtree", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#your_text::placeholder {
+    color: #ffffff;
+	opacity: 0.24;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 27px;
+    display:flex;
+}

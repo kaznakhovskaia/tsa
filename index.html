@@ -4,20 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="with=device-width, initial-scale=1">
         <title>ProAce Website</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-    </head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <body>
-        
-        
+        <script src="js/scripts.js">
+
+        </script>
+    </head>
+    <body> 
         <section id="top">
             <header>
-                <div class="logo">
+                <p class="logo">
                     PROACE
-                </div>
+                </p>
 
                 <nav>
                     <ul id="top_list">
@@ -34,13 +36,13 @@
        
     
             <section id="welcome">
-                <div class="headline_80">
+                <p class="headline_80">
                     Serve Your Passion
-                </div>
+                </p>
 
-                <div class="para_22">
+                <p class="para_22">
                     We help you fuel your passion for tennis and play at your best. From expert coaching to premium gear, we're here to elevate your game.
-                </div>
+                </p>
 
                 <button class="filled_button">
                     Get a membership
@@ -49,53 +51,91 @@
        
         </section>
 
-
         <section id="prostaff">
-            <div class="headline_40">
+            <p class="headline_40">
                 ProStaff
-            </div>
+            </p>
 
             <div class="flex-container">
                 <div class="gallery">
-                    <img src="../PROACE/img/sharapova.png" alt="Maria_Sharapova">
+                    <img src="../tsa/img/sharapova.png" alt="Maria_Sharapova">
                     <div class="desc">
-                        <div class="name">Maria Sharapova</div>
-                        <div class="pro_level">PTR Certified - Master Level 4</div>
+                        <p class="name">Maria Sharapova</p>
+                        <p class="pro_level">PTR Certified - Master Level 4</p>
                     </div>
                 </div>
 
                 <div class="gallery">
-                    <img src="../PROACE/img/kurnikova.png" alt="Anna_Kurnikova">
+                    <img src="../tsa/img/kurnikova.png" alt="Anna_Kurnikova">
                     <div class="desc">
-                        <div class="name">Anna Kurnikova</div>
-                        <div class="pro_level">USPTA Elite Professional Level 1</div>
+                        <p class="name">Anna Kurnikova</p>
+                        <p class="pro_level">USPTA Elite Professional Level 1</p>
                     </div>
                 </div>
 
                 <div class="gallery">
-                    <img src="../PROACE/img/dementieva.png" alt="Elena_Dementieva">
+                    <img src="../tsa/img/dementieva.png" alt="Elena_Dementieva">
                     <div class="desc">
-                        <div class="name">Elena Dementieva</div>
-                        <div class="pro_level">PTR Certified - Master Level 3</div>
+                        <p class="name">Elena Dementieva</p>
+                        <p class="pro_level">PTR Certified - Master Level 3</p>
                     </div>
                 </div>
 
                 <div class="gallery">
-                    <img src="../PROACE/img/kuznetsova.png" alt="Svetlana_Kuznetsova">
+                    <img src="../tsa/img/kuznetsova.png" alt="Svetlana_Kuznetsova">
                     <div class="desc">
-                        <div class="name">Svetlana Kuznetsova</div>
-                        <div class="pro_level">USPTA Elite Professional Level 2</div>
+                        <p class="name">Svetlana Kuznetsova</p>
+                        <p class="pro_level">USPTA Elite Professional Level 2</p>
                      </div>
                 </div>
             </div>
 
             <div id="show_more">
-                <div class="para_22">Show more</div>
-                <img src="../PROACE/img/keyboard_arrow_down_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="arrow_down">
+                <p class="para_22_600">Show more</p>
+                <i class="material-icons" style="font-size:36px; color: #313134;">keyboard_arrow_down</i>
             </div>
 
         </section>
 
+        <section id="rates">
+            <p class="headline_40_white">
+                Rates
+            </p>
+            
+            <div class="rates">
+                <p id="service_price" class="headline_40_white">Weekdays <span class="price">$20/h</span></p>
+                <p class="para_18">From 9am - 2 pm and 4pm - 9pm price is $35/h</p>
+            </div>
 
+            <div class="rates">
+                <p id="service_price" class="headline_40_white">Weekends <span class="price">$20/h</span></p>
+                <p class="para_18">From 9am - 5pm price is $35/h</p>
+            </div>
+
+            <div class="rates">
+                <p id="service_price" class="headline_40_white">Guest visit <span class="price">$10/h</span></p>
+                <p class="para_18">Guests at IRC may reserve court time 1 hour or less in advance of the desired day of play</p>
+            </div>
+
+            <div class="rates">
+                <p id="service_price" class="headline_40_white">Ball machine <span class="price">$20/h</span></p>
+                <p class="para_18">To preserve the availability of our ball machines, all first time users are asked to see the Front Desk prior to use for a demonstration on proper use</p>
+            </div>
+        </section>
+
+        <section id="get_in_touch">
+            <p class="headline_56">Get in touch</p>
+
+            <p class="para_22_white">Please complete the form and our team will contact you soon</p>
+
+            <form id="input_form">
+                <div id="name_email">
+                    <input type="text" id="your_name" name="name" placeholder="your name" class="my_class" />
+                    <input type="email" id="your_email" name="email" placeholder="your email" class="my_class" />
+                </div>
+                <textarea type="text" id="your_text" name="message" placeholder="your text"></textarea>
+                <input type="submit" value="Send message" />
+            </form>
+        </section>
     </body>
 </html> 
