@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="with=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ProAce Website</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,10 +10,6 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script src="https://kit.fontawesome.com/800c4be780.js" crossorigin="anonymous"></script>
-
-        <script src="js/scripts.js">
-
-        </script>
     </head>
     <body> 
         <section id="top">
@@ -24,15 +20,17 @@
 
                 <nav>
                     <ul id="top_list">
-                        <li>About</li>
-                        <li>ProStaff</li>
-                        <li>Rates</li>
+                        <li><a href="#top">About</a></li>
+                        <li><a href="#prostaff">ProStaff</a></li>
+                        <li><a href="#rates">Rates</a></li>
                     </ul>
                 </nav>
 
-                <button class="outline_button">
-                    Contact us 
-                </button>
+                <a href="#footer" class="outline_button">
+                    Contact us
+                </a>
+
+                <i id="mobile" class="fa-solid fa-bars" style="font-size: 30px; color: #B94A39; margin-right: 20px;"></i>
             </header>
        
     
@@ -45,9 +43,9 @@
                     We help you fuel your passion for tennis and play at your best. From expert coaching to premium gear, we're here to elevate your game.
                 </p>
 
-                <button class="filled_button">
+                <a href="#get_in_touch" class="filled_button">
                     Get in touch
-                </button>
+                </a>
             </section>
        
         </section>
@@ -125,28 +123,36 @@
         </section>
 
         <section id="get_in_touch">
-            <p class="headline_56">Get in touch</p>
 
-            <p class="para_22_white">Please complete the form and our team will contact you soon</p>
+                 <p class="headline_56">Get in touch</p>
+                 <p class="para_22_white">Please complete the form and our team will contact you soon</p>
+            
+
 
             <form id="input_form">
                 <div id="name_email">
-                    <input type="text" name="name" placeholder="your name" class="my_class" />
-                    <input type="email" name="email" placeholder="your email" class="my_class" />
+                    <input type="text" name="name" placeholder="your name" class="my_class" autocomplete="off" />
+                    <input type="email" name="email" placeholder="your email" class="my_class" autocomplete="off" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" />
                 </div>
                 <textarea type="text" id="your_text" name="message" placeholder="your text"></textarea>
                 <input type="submit" class="filled_button" value="Send message" />
             </form>
         </section>
 
-        <footer>
-            <p class="logo">
+        <footer id="footer">
+            <p class="logo_footer">
                 PROACE
             </p>
 
             <div id="social_media">
-                <i class="far fa-brands fa-instagram" style="font-size:24px; color: #ffffff;"></i>
-                <i class="fas fa-brands fa-facebook" style="font-size:20px; color: #ffffff;"></i>
+
+                <a href="https://www.instagram.com/accounts/login/?next=%2Fyourprofile%2F&source=desktop_nav" target="_blank">
+                    <i class="far fa-brands fa-instagram" style="font-size:24px; color: #ffffff;"></i>
+                </a>
+
+                <a href="https://www.facebook.com/login/device-based/regular/login/?login" target="_blank">
+                    <i class="fas fa-brands fa-facebook" style="font-size:20px; color: #ffffff;"></i>
+                </a>
             </div>
 
             <p class="copyrights">
@@ -154,5 +160,6 @@
             </p>
 
         </footer>
+        <script src="js/scripts.js"></script>
     </body>
 </html> 

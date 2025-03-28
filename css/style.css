@@ -23,10 +23,14 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
 	line-height: 1;
     margin: 0;
     padding: 0;
+    width: 101%;
 }
 ol, ul {
 	list-style: none;
@@ -68,14 +72,25 @@ button:focus {
   }
 
 header {
-    padding-left: 80px;
-    padding-right: 80px;
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background: rgba(255, 255, 255, 1);
+}
+
+header.scrolled .logo {
+    color: #B94A39;
 }
 
 .logo {
@@ -86,7 +101,9 @@ header {
     font-size: 20px;
     font-style: italic;
     display: flex;
+    margin-left: 80px;
 }
+
 
 #top_list {
     color: #313134;
@@ -102,6 +119,10 @@ header {
     gap: 32px;
 }
 
+#top_list a {
+    color: #313134;
+    text-decoration: none;
+}
 
 .outline_button {
     background-color: transparent; 
@@ -115,6 +136,8 @@ header {
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 12px;
+    text-decoration: none;
+    margin-right: 80px;
 }
 
 .outline_button:hover {
@@ -129,6 +152,17 @@ header {
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 12px;
+    opacity: 0.84;
+}
+
+#mobile {
+    display: none;
+    cursor: pointer;
+}
+
+#mobile:hover {
+    display: none;
+    cursor: pointer;
     opacity: 0.84;
 }
 
@@ -163,6 +197,7 @@ header {
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 12px;
+    text-decoration: none;
 }
 
 .filled_button:hover {
@@ -188,7 +223,7 @@ header {
     margin: auto;
     text-align: center;
     padding: 0;
-    width: 624px;
+    width: 44%;
 }
 
 #prostaff {
@@ -224,7 +259,8 @@ header {
     margin-right: 80px;
     gap: 32px;
     align-items: center;
-    width: auto;
+    width: 88%;
+    justify-content: space-between;
 }
 
 .desc {
@@ -310,7 +346,7 @@ header {
     font-style: normal;
     line-height: 32px;
     padding-top: 24px;
-    width: 624px;
+    width: 50%;
 }
 
 .headline_40_white {
@@ -345,7 +381,7 @@ header {
 
 .rates {
     padding: 0;
-    width: 1280px;
+    width: 88%;
 }
 
 #get_in_touch {
@@ -360,6 +396,8 @@ header {
     border-top-right-radius: 32px;
     margin-top: -30px;
 }
+
+
 
 .headline_56 {
     color:#FFFFFF;
@@ -461,8 +499,6 @@ header {
 }
 
 footer {
-    padding-left: 80px;
-    padding-right: 80px;
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
@@ -470,6 +506,18 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: #B94A39;
+    width: 100%;
+}
+
+.logo_footer {
+    color: #FFFFFF;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 20px;
+    font-style: italic;
+    display: flex;
+    margin-left: 80px;
 }
 
 #social_media {
@@ -487,4 +535,141 @@ footer {
     font-weight: 500;
     font-size: 12px;
     font-style: normal;
+    margin-right: 80px;
+}
+
+@media screen and (max-width: 640px) {
+    #top_list {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .outline_button {
+        margin-right: 20px;
+    }
+
+    .headline_80 {
+        font-weight: 700;
+        font-size: 56px;
+    }
+
+    .para_22 {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    #welcome {
+        width: 80%;
+    }
+
+    .filled_button {
+        width: 100%;
+    }
+
+    .outline_button {
+        display: none;
+    }
+
+    .outline_button:hover {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+    #mobile:hover {
+        display: block;
+    }
+
+    #service_price {
+        font-size: 35px;
+    }
+
+    .price {
+        font-size: 35px;
+    }
+
+    .para_18 {
+        width: 100%;
+    }
+
+    #rates {
+        padding: 80px 0px 85px 0px;
+    }
+
+    .headline_56 {
+        font-size: 40px;
+        width: 85%;
+        padding-top: 60px;
+    }
+
+    .para_22_white {
+        font-size: 18px;
+        width: 85%;
+    }
+
+    #name_email {
+        flex-direction: column;
+        gap:  20px;
+        margin-bottom: 53px;
+    }
+
+    #input_form {
+        column-gap: 20px;
+        width: 85%;
+        padding-bottom: 80px;
+    }
+
+    footer {
+
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .copyrights {
+        margin-right: 0px;
+    }
+
+    .logo_footer {
+        margin-left: 0px;
+    }
+
+    #top {
+        height: 812px;
+    }
+
+    .gallery {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 1190px) {
+    
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #prostaff {
+        height: auto;
+        gap: 32px;
+    }
+
+    .headline_40 {
+        margin-top: 40px;
+    }
+
+    #show_more {
+        margin-bottom: 70px;
+    }
 }
