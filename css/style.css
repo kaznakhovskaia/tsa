@@ -44,6 +44,12 @@ table {
 	border-spacing: 0;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 /*css reset*/
 
 
@@ -187,7 +193,6 @@ header {
 
 #prostaff {
     background-color:#FFFFFF;
-    position: absolute;
     height: 772px;
     width: 100%;
     display: flex;
@@ -285,16 +290,15 @@ header {
 
 #rates {
     background-color:#B94A39;
-    position: absolute;
-    width: 1280px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 67px;
-    padding: 80px 80px 230px 80px;
+    padding: 80px 0px 160px 0px;
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
-    margin-top: 700px;
+    margin-top: -30px;
 }
 
 .para_18 {
@@ -346,18 +350,15 @@ header {
 
 #get_in_touch {
     background-color:#313134;
-    position: absolute;
-    width: 1440px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 40px;
-    padding-top: 80px;
-    padding-bottom: 120px;;
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
-    margin-top: 1800px;
+    margin-top: -30px;
 }
 
 .headline_56 {
@@ -367,6 +368,7 @@ header {
     font-weight: 700;
     font-size: 56px;
     font-style: normal;
+    padding-top: 80px;
 }
 
 .para_22_white {
@@ -384,15 +386,28 @@ header {
     width: 406px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 24px;
+    padding-bottom: 120px;
 }
 
 #name_email {
-    width: 406px;
     display: flex;
     flex-direction: row;
-    gap: 24px;
     height: 49px;
+    justify-content: space-between;
+}
+
+.my_class {
+    resize: none;
+    color: #ffffff;
+    font-family: "Figtree", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px;
+    background: rgba(255,255,255,0.08);
+    display: flex;
+    border: none;
+    border-radius: 5px;
 }
 
 
@@ -406,29 +421,31 @@ header {
     font-style: normal;
     line-height: 27px;
     display: flex;
-    width: 85px;
 }
 
 .my_class:placeholder-shown {
-    padding: 10px 12px 12px 12px;
     background: rgba(255,255,255,0.08);
-    width: 191px;
     display: flex;
-    border: 0px;
+    border: none;
     border-radius: 5px;
 }
 
 #your_text {
-    display:;
-    padding: 10px 0px 0px 12px;
+    resize: none;
+    padding: 10px 12px;
     background: rgba(255,255,255,0.08);
-    border: 0px;
     border-radius: 5px;
     height: 97px;
     color: #ffffff;
     font-family: "Figtree", sans-serif;
     font-size: 18px;
     font-weight: 300;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 #your_text::placeholder {
@@ -441,4 +458,33 @@ header {
     font-style: normal;
     line-height: 27px;
     display:flex;
+}
+
+footer {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B94A39;
+}
+
+#social_media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    height: 20px;
+}
+
+.copyrights {
+    color:#FFFFFF;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
 }
